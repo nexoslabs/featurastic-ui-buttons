@@ -70,11 +70,11 @@ Featurastic UI Buttons come with built-in themes:
 
 | Variant       | Usage Class                | Preview Color                                                        |
 | ------------- | -------------------------- | -------------------------------------------------------------------- |
-| **Primary**   | `data-variant="primary"`   | ![#007bff](https://via.placeholder.com/15/007bff/007bff.png) #007bff |
-| **Secondary** | `data-variant="secondary"` | ![#6c757d](https://via.placeholder.com/15/6c757d/6c757d.png) #6c757d |
-| **Success**   | `data-variant="success"`   | ![#28a745](https://via.placeholder.com/15/28a745/28a745.png) #28a745 |
-| **Error**     | `data-variant="error"`     | ![#dc3545](https://via.placeholder.com/15/dc3545/dc3545.png) #dc3545 |
-| **Netural**   | `data-variant="netural"`   | ![#17a2b8](https://via.placeholder.com/15/17a2b8/17a2b8.png) #17a2b8 |
+| **Primary**   | `data-variant="primary"`   | ![#00ffff](https://via.placeholder.com/15/00ffff/00ffff.png) hsl(180, 100%, 50%) |
+| **Secondary** | `data-variant="secondary"` | ![#fe015e](https://via.placeholder.com/15/fe015e/fe015e.png) hsl(338, 99%, 50%) |
+| **Success**   | `data-variant="success"`   | ![#26ff00](https://via.placeholder.com/15/26ff00/26ff00.png) hsl(111, 100%, 50%) |
+| **Error**     | `data-variant="error"`     | ![#ff0000](https://via.placeholder.com/15/ff0000/ff0000.png) hsl(0, 100%, 50%) |
+| **Netural**   | `data-variant="netural"`   | ![#808080](https://via.placeholder.com/15/808080/808080.png) hsl(0, 0%, 50%) |
 
 ---
 

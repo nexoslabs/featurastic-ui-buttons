@@ -22,7 +22,7 @@ jobs:
 
       # Step 3: Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       # Step 4: Run Webpack build
       - name: Run Webpack build
@@ -30,25 +30,8 @@ jobs:
 
       # Step 5: Prepare Release Branch
       - name: Prepare Release Branch
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # Extract release tag (e.g., v1.0.0 -> v1)
-          RELEASE_VERSION=${{ github.event.release.tag_name }}
-          RELEASE_BRANCH=$(echo $RELEASE_VERSION | cut -d. -f1)
-          git checkout -b $RELEASE_BRANCH
-
-          # Set up Git identity
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Remove all files except the build output
-          find . -type f ! -name '*.js' ! -path './dist/*' -exec rm -f {} +
-
-          # Move build output to root directory
-          mv dist/* .
-
-          # Commit the changes
-          git add .
-          git commit -m "Release $RELEASE_VERSION"
-          git push origin $RELEASE_BRANCH
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.PAT_TOKEN }}
+          publish_branch: ${{ github.event.release.tag_name }}
+          publish_dir: .
