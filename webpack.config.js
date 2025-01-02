@@ -4,7 +4,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'fui-buttons.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'examples'),
   },
   module: {
     rules: [
