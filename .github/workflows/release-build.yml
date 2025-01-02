@@ -1,0 +1,52 @@
+name: Build and Deploy on Release
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18" # Use your project's Node.js version
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Run Webpack build
+      - name: Run Webpack build
+        run: npm run build
+
+      # Step 5: Commit and push build output to a new branch
+      - name: Push build to new branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Extract release tag (e.g., v1.0.0 -> v1)
+          TAG=${{ github.event.release.tag_name }}
+          BRANCH_NAME="${TAG%%.*}" # Use major version (v1, v2, etc.)
+
+          # Create a new orphan branch for the build output
+          git checkout --orphan "$BRANCH_NAME"
+
+          # Clean up existing files and move build output
+          git rm -rf .
+          mv dist/* .  # Adjust based on your Webpack output directory
+
+          # Commit the build output
+          git add .
+          git commit -m "Release $TAG"
+
+          # Push the branch to the repository
+          git push origin "$BRANCH_NAME"

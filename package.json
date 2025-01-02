@@ -1,0 +1,32 @@
+{
+  "name": "featurastic-ui-buttons",
+  "version": "1.0.0",
+  "description": "A feature-rich UI button library.",
+  "main": "dist/featurastic-ui-buttons.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nexoscreation/featurastic-ui-butttons.git"
+  },
+  "keywords": [
+    "UI",
+    "buttons",
+    "frontend",
+    "library"
+  ],
+  "author": "nexoscreator",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/nexoscreation/featurastic-ui-butttons/issues"
+  },
+  "homepage": "https://github.com/nexoscreation/featurastic-ui-butttons#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
