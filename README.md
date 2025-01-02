@@ -8,6 +8,7 @@
 # 🚀 Featurastic UI Buttons
 
 ![image](https://github.com/user-attachments/assets/e5f981a7-8d70-4d87-897f-8254eca27383)
+
 🎨 **A modern, customizable, and feature-rich UI button library** designed to create stunning web interfaces. Perfect for developers who demand elegance, responsiveness, and simplicity!
 
 ---
@@ -29,8 +30,10 @@
 [![Web Demo](https://img.shields.io/badge/Web-Demo-blue?style=for-the-badge&logo=google-chrome)](https://nexoscreation.github.io/featurastic-ui-buttons)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-green?style=for-the-badge&logo=github)](https://github.com/nexoscreation/featurastic-ui-buttons)
 [![YouTube Video](https://img.shields.io/badge/YouTube-Video-red?style=for-the-badge&logo=youtube)](https://youtu.be/rMnDe0iEGRs?si=B2viVesOhHYusbBG)
+[![NPM Package](https://img.shields.io/badge/NPM-Package-orange?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/featurastic-ui-buttons)
+[![Screenshot](https://img.shields.io/badge/Screenshot-Image-yellow?style=for-the-badge&logo=image)](https://github.com/user-attachments/assets/bfd4aa64-12e4-4fd7-bfb5-ddad41720626)
 
-## <!-- https://github.com/user-attachments/assets/bfd4aa64-12e4-4fd7-bfb5-ddad41720626 -->
+## <!--  -->
 
 ## 🛠️ Getting Started
 
@@ -115,15 +118,7 @@ We ❤️ contributions! Here's how you can help:
 
 ## 🛡️ License
 
-This project is open-source and licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
-
----
-
-## 📣 Feedback & Support
-
-Have suggestions, found bugs, or need help? Create an [issue](https://github.com/nexoscreation/featurastic-ui-buttons/issues) or start a discussion!
-
-🌐 Follow the project: [GitHub Repository](https://github.com/nexoscreation/featurastic-ui-buttons/stargazers)
+This project is open-source and licensed under the **CC0-1.0 License**. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
