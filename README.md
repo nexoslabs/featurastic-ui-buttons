@@ -37,15 +37,24 @@
 
 ## 🛠️ Getting Started
 
-### HTML + CSS Usage
+### HTML + JS Usage
 
 Add a stylish button in seconds:
 
 ```html
-<link rel="stylesheet" href="./fui-buttons.css" />
-<script src="./fui-buttons.js"></script>
-
+<!-- Button Element -->
 <button class="fui-btn" data-variant="primary">Click Me</button>
+<!-- Include the JS -->
+<script src="https://cdn.jsdelivr.net/gh/nexoscreation/featurastic-ui-buttons@1/fui-buttons.js"></script>
+```
+
+Optionally, add the CSS for additional styling:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/nexoscreation/featurastic-ui-buttons@1/fui-buttons.css"
+/>
 ```
 
 <!-- ### JavaScript Integration
@@ -68,13 +77,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 Featurastic UI Buttons come with built-in themes:
 
-| Variant       | Usage Class                | Preview Color                                                        |
-| ------------- | -------------------------- | -------------------------------------------------------------------- |
-| **Primary**   | `data-variant="primary"`   | ![#00ffff](https://via.placeholder.com/15/00ffff/00ffff.png) hsl(180, 100%, 50%) |
-| **Secondary** | `data-variant="secondary"` | ![#fe015e](https://via.placeholder.com/15/fe015e/fe015e.png) hsl(338, 99%, 50%) |
-| **Success**   | `data-variant="success"`   | ![#26ff00](https://via.placeholder.com/15/26ff00/26ff00.png) hsl(111, 100%, 50%) |
-| **Error**     | `data-variant="error"`     | ![#ff0000](https://via.placeholder.com/15/ff0000/ff0000.png) hsl(0, 100%, 50%) |
-| **Netural**   | `data-variant="netural"`   | ![#808080](https://via.placeholder.com/15/808080/808080.png) hsl(0, 0%, 50%) |
+| Variant       | Usage Class                | Preview Color                                                                    | Preview Button |
+| ------------- | -------------------------- | -------------------------------------------------------------------------------- | -------------- |
+| **Primary**   | `data-variant="primary"`   | ![#00ffff](https://via.placeholder.com/15/00ffff/00ffff.png) hsl(180, 100%, 50%) | Comming Soon!  |
+| **Secondary** | `data-variant="secondary"` | ![#fe015e](https://via.placeholder.com/15/fe015e/fe015e.png) hsl(338, 99%, 50%)  | Comming Soon!  |
+| **Success**   | `data-variant="success"`   | ![#26ff00](https://via.placeholder.com/15/26ff00/26ff00.png) hsl(111, 100%, 50%) | Comming Soon!  |
+| **Error**     | `data-variant="error"`     | ![#ff0000](https://via.placeholder.com/15/ff0000/ff0000.png) hsl(0, 100%, 50%)   | Comming Soon!  |
+| **Netural**   | `data-variant="netural"`   | ![#808080](https://via.placeholder.com/15/808080/808080.png) hsl(0, 0%, 50%)     | Comming Soon!  |
 
 ---
 
