@@ -30,8 +30,19 @@ jobs:
 
       # Step 5: Prepare Release Branch
       - name: Prepare Release Branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.PAT_TOKEN  }}
-          publish_branch: ${{ github.event.release.tag_name }}
-          publish_dir: .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Configure Git
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          
+          # Create and switch to the new branch
+          git checkout -b "${{ github.event.release.tag_name }}"
+          
+          # Add files and commit changes
+          git add .
+          git commit -m "Release ${GITHUB_REF}"
+          
+          # Push to the new branch
+          git push origin "${{ github.event.release.tag_name }}"
