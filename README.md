@@ -9,7 +9,7 @@
 
 ![image](https://github.com/user-attachments/assets/e5f981a7-8d70-4d87-897f-8254eca27383)
 
-🎨 **A modern, customizable, and feature-rich UI button library** designed to create stunning web interfaces. Perfect for developers who demand elegance, responsiveness, and simplicity!
+🎨 **A modern, customizable, and feature-rich UI button library** designed for stunning web interfaces. Perfect for developers who demand elegance, responsiveness, and simplicity.
 
 ---
 
@@ -19,36 +19,36 @@
 - ⚡ **Lightweight & Fast**: Minimal footprint, optimized for performance.
 - 📱 **Responsive Design**: Looks fantastic on all devices.
 - 🔌 **Seamless Integration**: Works with React, Angular, Vue, and vanilla JavaScript.
-- 🌈 **Predefined Themes**: Ready-to-use themes or easily build your own.
+- 🌈 **Predefined Themes**: Use built-in themes or create your own.
 - ✨ **Ripple Effects**: Add interactive animations with one attribute.
-- 🌟 **Extendable**: Add custom behaviors and styles with ease.
+- 🌟 **Extendable**: Add custom behaviors and styles easily.
 
 ---
 
-### Links
+## 🔗 Useful Links
 
-[![Web Demo](https://img.shields.io/badge/Web-Demo-blue?style=for-the-badge&logo=google-chrome)](https://nexoscreation.github.io/featurastic-ui-buttons)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-green?style=for-the-badge&logo=github)](https://github.com/nexoscreation/featurastic-ui-buttons)
-[![YouTube Video](https://img.shields.io/badge/YouTube-Video-red?style=for-the-badge&logo=youtube)](https://youtu.be/rMnDe0iEGRs?si=B2viVesOhHYusbBG)
-[![NPM Package](https://img.shields.io/badge/NPM-Package-orange?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/featurastic-ui-buttons)
+[![Web Demo](https://img.shields.io/badge/Web-Demo-blue?style=for-the-badge&logo=google-chrome)](https://nexoscreation.github.io/featurastic-ui-buttons)  
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-green?style=for-the-badge&logo=github)](https://github.com/nexoscreation/featurastic-ui-buttons)  
+[![YouTube Video](https://img.shields.io/badge/YouTube-Video-red?style=for-the-badge&logo=youtube)](https://youtu.be/rMnDe0iEGRs?si=Hghh_w4IZfM?)  
+[![NPM Package](https://img.shields.io/badge/NPM-Package-orange?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/featurastic-ui-buttons)  
 [![Screenshot](https://img.shields.io/badge/Screenshot-Image-yellow?style=for-the-badge&logo=image)](https://github.com/user-attachments/assets/bfd4aa64-12e4-4fd7-bfb5-ddad41720626)
 
-## <!--  -->
 
 ## 🛠️ Getting Started
 
-### HTML + JS Usage
+### Basic Usage (HTML + JS)
 
-Add a stylish button in seconds:
+Quickly add a stylish button to your webpage:
 
 ```html
 <!-- Button Element -->
 <button class="fui-btn" data-variant="primary">Click Me</button>
-<!-- Include the JS -->
+
+<!-- Include the JavaScript -->
 <script src="https://cdn.jsdelivr.net/gh/nexoscreation/featurastic-ui-buttons@1/fui-buttons.js"></script>
 ```
 
-Optionally, add the CSS for additional styling:
+Optionally, include the CSS for advanced styling:
 
 ```html
 <link
@@ -57,23 +57,9 @@ Optionally, add the CSS for additional styling:
 />
 ```
 
-<!-- ### JavaScript Integration
-
-```javascript
-import './fui-buttons.css';
-
-document.addEventListener('DOMContentLoaded', () => {
-  const button = document.createElement('button');
-  button.className = 'fui-btn';
-  button.setAttribute('data-variant', 'success');
-  button.innerText = 'Dynamically Created Button';
-  document.body.appendChild(button);
-});
-``` -->
-
 ---
 
-## 🌟 Themes & Variants
+## 🌟 Built-in Themes & Variants
 
 Featurastic UI Buttons come with built-in themes:
 
@@ -89,7 +75,7 @@ Featurastic UI Buttons come with built-in themes:
 
 ## 🌈 Example Buttons
 
-Here's what you can build:
+Explore the power of Featurastic UI Buttons:
 
 ```html
 <!-- Button Variants -->
@@ -109,7 +95,7 @@ Here's what you can build:
 - **React.js, Vue.js, Nuxt.js Components**
 - Advanced animations and accessibility options.
 - More themes and variants.
-- Customizable ripple effects.
+- Customizable Button size.
 
 ---
 
@@ -128,7 +114,3 @@ We ❤️ contributions! Here's how you can help:
 ## 🛡️ License
 
 This project is open-source and licensed under the **CC0-1.0 License**. See the [LICENSE](LICENSE) file for more details.
-
----
-
-Happy coding with **Featurastic UI Buttons**! 🚀

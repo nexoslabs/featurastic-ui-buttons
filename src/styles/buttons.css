@@ -1,22 +1,21 @@
-/* Base Button Styles */
+/* === Base Button Styles === */
 .fui-btn {
-  display: inline-block;
-  text-align: center;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   font-weight: 500;
   font-size: 16px;
+  text-align: center;
+  text-transform: uppercase; /* Futuristic text style */
   box-sizing: border-box;
   border: none;
-  background-color: hsl(var(--fui-btn-bg, 220, 90%, 50%));
-  color: hsl(var(--fui-btn-color, 0, 0%, 100%));
-  border-radius: 3px 0px 3px 0px;
+  border-radius: 4px 0px 4px 0px; /* Unique corner styling */
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  width: auto;
-  min-width: 120px;
+  background-color: hsla(var(--fui-btn-bg, 220, 90%, 50%, 1), 1);
+  color: hsla(var(--fui-btn-color, 0, 0%, 100%, 1), 1);
   position: relative;
+  min-width: 120px;
   z-index: 0;
   clip-path: polygon(
     calc(100% - 8px) 0,
@@ -25,34 +24,44 @@
     8px 100%,
     0 calc(100% - 8px),
     0 0
-  );
+  ); /* Futuristic shape */
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  overflow: hidden; /* Ensures ripple and glow effects stay contained */
 }
 
-/* .fui-btn:focus {
-  outline: 3px solid #007bff;
-  outline-offset: 2px;
-} */
-
-/* Button States */
+/* === Button States === */
 .fui-btn:hover {
-  opacity: 0.8;
+  transform: scale(1.02); /* Slight enlargement on hover */
+  background-color: hsla(var(--fui-btn-bg, 220, 90%, 50%, 1), 0.9);
 }
 
 .fui-btn:active {
-  transform: scale(0.98);
+  transform: scale(0.98); /* Compression effect on click */
 }
 
-/* Glowing Effect */
+.fui-btn:disabled {
+  cursor: not-allowed;
+  background-color: hsla(
+    0,
+    0%,
+    70%,
+    1
+  ); /* Muted background for disabled state */
+  color: hsla(0, 0%, 50%, 1);
+  box-shadow: none;
+  transform: none;
+}
+
+/* === Glowing Effect === */
 .fui-btn-glow {
   position: absolute;
   inset: 1px;
-  color: inherit;
-  background-color: hsl(0, 0%, 10%);
-  border-radius: 3px 0px 3px 0px;
-  border: 0;
+  /* color: inherit; */
+  background-color: hsla(0, 0%, 4%, 1);
+  border-radius: 4px 0px 4px 0px;
   z-index: -2;
-  box-shadow: inset 0 0 25px -10px hsl(var(--fui-btn-glow, 220, 90%, 50%));
-  color: inherit;
+  box-shadow: inset 0 0 24px -8px hsla(var(--fui-btn-glow, 220, 90%, 50%, 1), 1);
   clip-path: polygon(
     calc(100% - 8px) 0,
     100% 8px,
@@ -61,54 +70,91 @@
     0 calc(100% - 8px),
     0 0
   );
-  transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.fui-btn-glow:hover {
-  background-color: hsl(0, 0%, 15%);
-  box-shadow: inset 0 0 25px -10px hsl(var(--fui-btn-glow, 220, 90%, 50%));
+.fui-btn:hover .fui-btn-glow {
+  background-color: hsla(0, 0%, 6%, 1);
+  box-shadow: inset 0 0 26px -10px hsla(var(--fui-btn-glow, 220, 90%, 50%, 1), 1);
 }
 
-/* Ripple Effect */
+/* === Ripple Effect === */
 .fui-btn-ripple {
-  position: relative;
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(
+    calc(100% - 8px) 0,
+    100% 8px,
+    100% 100%,
+    8px 100%,
+    0 calc(100% - 8px),
+    0 0
+  );
   overflow: hidden;
 }
 
 .fui-btn-ripple:after {
   content: "";
   position: absolute;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 50%;
-  transform: scale(0);
-  animation: ripple 0.6s linear;
-  pointer-events: none;
+  inset: 0 auto 0 -200%;
+  width: 200%;
+  transform: skewX(-20deg);
+  opacity: 0.6;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    hsla(var(--fui-btn-bg, 0, 0%, 100%, 1), 1),
+    transparent
+  );
 }
 
-.fui-btn-ripple:focus {
-  outline: none;
+.fui-btn:hover .fui-btn-ripple:after {
+  left: 200%;
+  transition: 1.6s ease;  
 }
 
-@keyframes ripple {
+.fui-btn-ripple:before {
+  content: "";
+  position: absolute;
+  inset: 50%;
+  transform: skewX(-10deg);
+  border-radius: 100vh;
+}
+
+.fui-btn:focus .fui-btn-ripple:before {
+  animation: ripple-animation 0.7s ease-in-out forwards;
+}
+
+.fui-btn:active .fui-btn-ripple:before {
+  animation: unset;
+}
+
+/* === Ripple Animation === */
+@keyframes ripple-animation {
+  0% {
+    box-shadow: 0 0 0 0 hsla(var(--fui-btn-bg, 0, 0%, 100%, 1), 1);
+    opacity: 0.6;
+  }
+
   to {
-    transform: scale(4);
+    box-shadow: 0 0 0 150px hsla(var(--fui-btn-bg, 0, 0%, 100%, 1), 1);
     opacity: 0;
   }
 }
 
-/* Responsive Styles */
+/* === Responsive Styles === */
 @media (max-width: 768px) {
   .fui-btn {
+    padding: 0.5rem 1rem;
     font-size: 14px;
-    padding: 0.5rem 0.8rem;
-    width: auto;
-    min-width: 96px;
+    min-width: 100px;
   }
 }
 
 @media (max-width: 480px) {
   .fui-btn {
+    padding: 0.4rem 0.8rem;
     font-size: 12px;
-    padding: 0.4rem 0.6rem;
+    min-width: 90px;
   }
 }
