@@ -33,7 +33,6 @@
 [![NPM Package](https://img.shields.io/badge/NPM-Package-orange?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/featurastic-ui-buttons)  
 [![Screenshot](https://img.shields.io/badge/Screenshot-Image-yellow?style=for-the-badge&logo=image)](https://github.com/user-attachments/assets/bfd4aa64-12e4-4fd7-bfb5-ddad41720626)
 
-
 ## 🛠️ Getting Started
 
 ### Basic Usage (HTML + JS)
@@ -45,15 +44,15 @@ Quickly add a stylish button to your webpage:
 <button class="fui-btn" data-variant="primary">Click Me</button>
 
 <!-- Include the JavaScript -->
-<script src="https://cdn.jsdelivr.net/gh/nexoscreation/featurastic-ui-buttons@1/fui-buttons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/featurastic-ui-buttons@1.0.0/fui-buttons.js"></script>
 ```
 
-Optionally, include the CSS for advanced styling:
+also, include the CSS for advanced styling:
 
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/nexoscreation/featurastic-ui-buttons@1/fui-buttons.css"
+  href="https://cdn.jsdelivr.net/npm/featurastic-ui-buttons@1.0.0/fui-buttons.css"
 />
 ```
 
