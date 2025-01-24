@@ -1,0 +1,17 @@
+/* === Helper Function === */
+.fui-btn .fui-btn-border:before,
+.fui-btn .fui-btn-border:after{
+  content: '';
+  position: absolute;
+  height: 35%;
+  width: 3px;
+  background: hsla(var(--fui-btn-bg, 220, 90%, 50%, 1), 1);
+  left: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fui-btn .fui-btn-border:after{
+  left: unset;
+  right: -1px;
+}

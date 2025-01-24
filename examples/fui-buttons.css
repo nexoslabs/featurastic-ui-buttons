@@ -1,1 +1,159 @@
-.fui-btn,.fui-btn-ripple{clip-path:polygon(calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px),0 0);overflow:hidden}.fui-btn{display:inline-flex;align-items:center;justify-content:center;padding:.6rem 1.2rem;font-weight:500;font-size:16px;text-align:center;text-transform:uppercase;box-sizing:border-box;border:none;border-radius:4px 0;cursor:pointer;background-color:hsla(var(--fui-btn-bg,220,90%,50%,1),1);color:hsla(var(--fui-btn-color,0,0%,100%,1),1);position:relative;min-width:120px;z-index:0;transition:background-color .3s,transform .2s,box-shadow .3s}.fui-btn:hover{transform:scale(1.02);background-color:hsla(var(--fui-btn-bg,220,90%,50%,1),.9)}.fui-btn:active{transform:scale(.98)}.fui-btn:disabled{cursor:not-allowed;background-color:#b2b2b2;color:#7f7f7f;box-shadow:none;transform:none}.fui-btn-glow{position:absolute;inset:1px;background-color:#0a0a0a;border-radius:4px 0;z-index:-2;box-shadow:inset 0 0 24px -8px hsla(var(--fui-btn-glow,220,90%,50%,1),1);clip-path:polygon(calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px),0 0);transition:background-color .3s,box-shadow .3s}.fui-btn:hover .fui-btn-glow{background-color:#0f0f0f;box-shadow:inset 0 0 26px -10px hsla(var(--fui-btn-glow,220,90%,50%,1),1)}.fui-btn-ripple{position:absolute;inset:0}.fui-btn-ripple:after{content:"";position:absolute;inset:0 auto 0 -200%;width:200%;transform:skewX(-20deg);opacity:.6;background-image:linear-gradient(to right,transparent,hsla(var(--fui-btn-bg,0,0%,100%,1),1),transparent)}.fui-btn:hover .fui-btn-ripple:after{left:200%;transition:1.6s}.fui-btn-ripple:before{content:"";position:absolute;inset:50%;transform:skewX(-10deg);border-radius:100vh}.fui-btn:focus .fui-btn-ripple:before{animation:.7s ease-in-out forwards ripple-animation}.fui-btn:active .fui-btn-ripple:before{animation:unset}@keyframes ripple-animation{0%{box-shadow:0 0 0 0 hsla(var(--fui-btn-bg,0,0%,100%,1),1);opacity:.6}to{box-shadow:0 0 0 150px hsla(var(--fui-btn-bg,0,0%,100%,1),1);opacity:0}}@media (max-width:768px){.fui-btn{padding:.5rem 1rem;font-size:14px;min-width:100px}}@media (max-width:480px){.fui-btn{padding:.4rem .8rem;font-size:12px;min-width:90px}}
+/* === Base Button Styles === */
+.fui-btn {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: hsla(var(--fui-btn-color, 0, 0%, 100%, 1), 1);
+  background-color: hsla(var(--fui-btn-bg, 220, 90%, 50%, 1), 1);
+  border: none;
+  outline: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0.6rem 1.2rem;
+  text-transform: uppercase; /* Futuristic text style */
+  box-sizing: border-box;
+  border-radius: 4px 0px 4px 0px; /* Unique corner styling */
+  word-spacing: 3px;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  min-height: 30px;
+  min-width: 120px;
+  z-index: 1;
+  clip-path: polygon(
+    calc(100% - 8px) 0,
+    100% 8px,
+    100% 100%,
+    8px 100%,
+    0 calc(100% - 8px),
+    0 0
+  ); /* Futuristic shape */
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  overflow: hidden; /* Ensures ripple and glow effects stay contained */
+}
+
+/* === Button States === */
+.fui-btn:hover {
+  transform: scale(1.02); /* Slight enlargement on hover */
+  background-color: hsla(var(--fui-btn-bg, 220, 90%, 50%, 1), 0.9);
+}
+
+.fui-btn:active {
+  transform: scale(0.98); /* Compression effect on click */
+}
+
+.fui-btn:disabled {
+  cursor: not-allowed;
+  background-color: hsla(0,0%,70%,1);
+  color: hsla(0, 0%, 50%, 1);
+  transform: none;
+}
+
+/* === Glowing Effect === */
+.fui-btn-glow {
+  position: absolute;
+  inset: 1px;
+  /* color: inherit; */
+  background-color: hsla(0, 0%, 4%, 1);
+  border-radius: 4px 0px 4px 0px;
+  z-index: -2;
+  box-shadow: inset 0 0 24px -8px hsla(var(--fui-btn-glow, 220, 90%, 50%, 1), 1);
+  clip-path: polygon(
+    calc(100% - 8px) 0,
+    100% 8px,
+    100% 100%,
+    8px 100%,
+    0 calc(100% - 8px),
+    0 0
+  );
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.fui-btn:hover .fui-btn-glow {
+  background-color: hsla(0, 0%, 6%, 1);
+  box-shadow: inset 0 0 26px -10px hsla(var(--fui-btn-glow, 220, 90%, 50%, 1), 1);
+}
+
+/* === Ripple Effect === */
+.fui-btn-ripple {
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(
+    calc(100% - 8px) 0,
+    100% 8px,
+    100% 100%,
+    8px 100%,
+    0 calc(100% - 8px),
+    0 0
+  );
+  overflow: hidden;
+}
+
+.fui-btn-ripple:after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 -200%;
+  width: 200%;
+  transform: skewX(-20deg);
+  opacity: 0.6;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    hsla(var(--fui-btn-bg, 0, 0%, 100%, 1), 1),
+    transparent
+  );
+}
+
+.fui-btn:hover .fui-btn-ripple:after {
+  left: 200%;
+  transition: 1.6s ease;
+}
+
+.fui-btn-ripple:before {
+  content: "";
+  position: absolute;
+  inset: 50%;
+  transform: skewX(-10deg);
+  border-radius: 100vh;
+}
+
+.fui-btn:focus .fui-btn-ripple:before {
+  animation: ripple-animation 0.7s ease-in-out forwards;
+}
+
+.fui-btn:active .fui-btn-ripple:before {
+  animation: unset;
+}
+
+/* === Ripple Animation === */
+@keyframes ripple-animation {
+  0% {
+    box-shadow: 0 0 0 0 hsla(var(--fui-btn-bg, 0, 0%, 100%, 1), 1);
+    opacity: 0.6;
+  }
+
+  to {
+    box-shadow: 0 0 0 150px hsla(var(--fui-btn-bg, 0, 0%, 100%, 1), 1);
+    opacity: 0;
+  }
+}
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+  .fui-btn {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fui-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 12px;
+    min-width: 90px;
+  }
+}
