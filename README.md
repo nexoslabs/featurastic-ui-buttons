@@ -114,3 +114,13 @@ Check out our [Contribution Guidelines](CONTRIBUTING.md) for more details.
 ## 📄 License
 
 This project is licensed under the **CC0-1.0 License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">
+  Made with ❤️ by the Nexos Creation Team
+</p>
+
+<p align="center">
+  <a href="https://github.com/nexoscreation/nuxt-google-translate/stargazers">⭐ Star us on GitHub!</a>
+</p>
