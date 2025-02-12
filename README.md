@@ -122,5 +122,5 @@ This project is licensed under the **CC0-1.0 License** - see the [LICENSE](LICEN
 </p>
 
 <p align="center">
-  <a href="https://github.com/nexoscreation/nuxt-google-translate/stargazers">⭐ Star us on GitHub!</a>
+  <a href="https://github.com/nexoscreation/featurastic-ui-buttons/stargazers">⭐ Star us on GitHub!</a>
 </p>
