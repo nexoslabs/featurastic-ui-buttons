@@ -31,6 +31,8 @@
 [![YouTube Video](https://img.shields.io/badge/YouTube-Video-red?style=for-the-badge&logo=youtube)](https://youtu.be/Hghh_w4IZfM?si=Hghh_w4IZfM?)
 [![NPM Package](https://img.shields.io/badge/NPM-Package-orange?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/featurastic-ui-buttons)
 
+---
+
 ## 🛠️ Getting Started
 
 ### Basic Usage (HTML + JS)
@@ -108,9 +110,9 @@ This project is open-source and licensed under the **CC0-1.0 License**. See the 
 ---
 
 <p align="center">
-  Made with ❤️ by the TermuXpert Team
+  Made with ❤️ by the Nexos Creation Team
 </p>
 
 <p align="center">
-  <a href="https://github.com/nexoscreation/TermuXpert/stargazers">⭐ Star us on GitHub!</a>
+  <a href="https://github.com/nexoscreation/featurastic-ui-buttons/stargazers">⭐ Star us on GitHub!</a>
 </p>
