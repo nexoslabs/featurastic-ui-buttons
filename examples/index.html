@@ -2,156 +2,192 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Featurastic UI Buttons - Demo</title>
-  <link rel="stylesheet" href="./fui-buttons.css">
-  <style>
-    /* General Reset */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featurastic UI Buttons - Demo</title>
+    <link rel="stylesheet" href="./fui-buttons.css">
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      margin: 0;
-      background-color: hsl(240, 10%, 4%);
-      color: hsl(0, 0%, 90%);
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: hsla(240, 10%, 4%, 1);
+            color: hsl(0, 0%, 90%);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
 
-    header,
-    footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: hsl(240, 10%, 10%);
-      width: 100%;
-    }
+        header,
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: hsla(240, 10%, 8%, 0.1);
+            color: hsl(0, 0%, 80%);
+            width: 100%;
+        }
 
-    header h1,
-    footer p {
-      margin: 0;
-    }
+        header h1,
+        footer p {
+            margin: 0;
+        }
 
-    header a,
-    footer a {
-      color: hsl(200, 80%, 60%);
-      text-decoration: none;
-    }
+        header a,
+        footer a {
+            color: hsl(200, 80%, 60%);
+            text-decoration: none;
+        }
 
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem 1rem;
-      gap: 40px;
-    }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem;
+            background-color: hsla(240, 10%, 4%, 0.9);
+            border-top: 1px solid hsla(240, 10%, 8%, 0.7);
+            border-bottom: 1px solid hsla(240, 10%, 8%, 0.7);
+            gap: 40px;
+        }
 
-    h2 {
-      margin-bottom: 1rem;
-    }
+        main h2 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin-bottom: 0.2rem;
+        }
 
-    section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      text-align: center;
-    }
+        main p {
+            color: #dbeafe;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
 
-    .button-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+        }
 
-    .fui-btn a {
-      color: inherit;
-      text-decoration: none;
-    }
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
 
-    footer {
-      text-align: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
+        .fui-btn a {
+            color: inherit;
+            text-decoration: none;
+        }
 
-    footer a:hover {
-      text-decoration: underline;
-    }
+        footer {
+            text-align: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
 
-    /* Responsive Design */
-    @media (max-width: 768px) {
+        footer a:hover {
+            text-decoration: underline;
+        }
 
-      header,
-      footer {
-        flex-direction: column;
-        text-align: center;
-      }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.2em;
+            }
 
-      .button-group {
-        flex-direction: column;
-        gap: 15px;
-      }
-    }
-  </style>
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .button-group {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.5s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <h1>FUI Buttons Demo</h1>
-    <a href="https://youtube.com/@nexoscreator" target="_blank" aria-label="Visit Nexos Creator Channel">
-      <button class="fui-btn" data-variant="secondary">Visit Channel</button>
-    </a>
-  </header>
+    <header>
+        <div style="display: flex;flex-direction: column; text-align: start;">
+            <h1 style="color: #ffffff; font-size: 1.6rem; margin: 0;">FUI Buttons Showcase</h1>
+            <p style="color: #dbeafe; font-size: 0.9rem;  margin: 0;">Explore modern, interactive, and customizable
+                buttons</p>
+        </div>
+        <a href="https://youtube.com/@nexoscreator" target="_blank" aria-label="Visit Nexos Creator Channel">
+            <button class="fui-btn" data-variant="secondary" style="margin-top: 1rem;">Visit Channel</button>
+        </a>
+    </header>
 
-  <main>
-    <!-- Section 1: Button Variants -->
-    <section>
-      <h2>Futurastic Button Style V1</h2>
-      <div class="button-group">
-        <button class="fui-btn" data-variant="primary" data-ripple="true" role="button"
-          aria-label="Primary Button">Primary</button>
-        <button class="fui-btn" data-variant="secondary" data-ripple="true" role="button"
-          aria-label="Secondary Button">Secondary</button>
-        <button class="fui-btn" data-variant="success" data-ripple="true" role="button"
-          aria-label="Success Button">Success</button>
-        <button class="fui-btn" data-variant="error" data-ripple="true" role="button"
-          aria-label="Error Button">Error</button>
-        <button class="fui-btn" data-variant="netural" data-ripple="true" role="button"
-          aria-label="Neutral Button">Neutral</button>
-      </div>
-    </section>
 
-    <!-- Section 2: Buttons with Ripple Effect -->
-    <section>
-      <h2>Futurastic Button Style V2</h2>
-      <div class="button-group">
-        <button class="fui-btn" data-variant="upcoming" data-ripple="true" role="button"
-          aria-label="Coming Soon Button">
-          Coming Soon!
-        </button>
-      </div>
-    </section>
-  </main>
+    <main>
+        <!-- Section 1: Button Variants -->
+        <section class="fade-in">
+            <h2>Futuristic UI Button Style V1</h2>
+            <p>These buttons are designed for everyday use, providing primary, secondary, and state-based styling.</p>
+            <div class="button-group">
+                <button class="fui-btn" data-variant="primary" data-ripple="true" role="button"
+                    aria-label="Primary Button">Primary</button>
+                <button class="fui-btn" data-variant="secondary" data-ripple="true" role="button"
+                    aria-label="Secondary Button">Secondary</button>
+                <button class="fui-btn" data-variant="success" data-ripple="true" role="button"
+                    aria-label="Success Button">Success</button>
+                <button class="fui-btn" data-variant="error" data-ripple="true" role="button"
+                    aria-label="Error Button">Error</button>
+                <button class="fui-btn" data-variant="netural" data-ripple="true" role="button"
+                    aria-label="Neutral Button">Neutral</button>
+            </div>
+        </section>
 
-  <footer>
-    <p>Created with ❤️ by <a href="https://github.com/nexoscreator" target="_blank">Nexos Creator</a></p>
-    <p>Check the <a href="https://github.com/nexoscreation/featurastic-ui-buttons" target="_blank">GitHub Repository</a>
-    </p>
-  </footer>
+        <!-- Section 2: Buttons with Ripple Effect -->
+        <section class="fade-in">
+            <h2>Futurastic UI Button Style V2</h2>
+            <div class="button-group">
+                <button class="fui-btn" data-variant="upcoming" data-ripple="true" role="button"
+                    aria-label="Coming Soon Button">
+                    Coming Soon!
+                </button>
+            </div>
+        </section>
+    </main>
 
-  <!-- Link to the compiled JS file -->
-  <script src="./fui-buttons.js"></script> <!-- Update this path if necessary -->
+    <footer>
+        <p>Created with ❤️ by <a href="https://github.com/nexoscreator" target="_blank">Nexos Creator</a></p>
+        <p>Follow us on:
+            <a href="https://github.com/nexoscreator" target="_blank">GitHub</a> |
+            <a href="https://youtube.com/@nexoscreator" target="_blank">YouTube</a>
+        </p>
+    </footer>
+
+
+    <!-- Link to the compiled JS file -->
+    <script src="./fui-buttons.js"></script> <!-- Update this path if necessary -->
 </body>
 
 </html>

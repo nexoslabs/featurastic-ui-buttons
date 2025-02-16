@@ -1,6 +1,6 @@
 {
   "name": "featurastic-ui-buttons",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A feature-rich, modern, and customizable UI button library.",
   "main": "fui-buttons.js",
   "files": [
