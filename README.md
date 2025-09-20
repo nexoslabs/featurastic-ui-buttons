@@ -26,8 +26,8 @@
 
 ## 🔗 Useful Links
 
-[![Web Demo](https://img.shields.io/badge/Web-Demo-blue?style=for-the-badge&logo=google-chrome)](https://nexoscreation.github.io/featurastic-ui-buttons)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-green?style=for-the-badge&logo=github)](https://github.com/nexoscreation/featurastic-ui-buttons)
+[![Web Demo](https://img.shields.io/badge/Web-Demo-blue?style=for-the-badge&logo=google-chrome)](https://nexoslabs.github.io/featurastic-ui-buttons)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-green?style=for-the-badge&logo=github)](https://github.com/nexoslabs/featurastic-ui-buttons)
 [![YouTube Video](https://img.shields.io/badge/YouTube-Video-red?style=for-the-badge&logo=youtube)](https://youtu.be/Hghh_w4IZfM?si=Hghh_w4IZfM?)
 [![NPM Package](https://img.shields.io/badge/NPM-Package-orange?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/featurastic-ui-buttons)
 
@@ -110,9 +110,9 @@ This project is open-source and licensed under the **CC0-1.0 License**. See the 
 ---
 
 <p align="center">
-  Made with ❤️ by the Nexos Creation Team
+  Made with ❤️ by the Nexos Labs Team
 </p>
 
 <p align="center">
-  <a href="https://github.com/nexoscreation/featurastic-ui-buttons/stargazers">⭐ Star us on GitHub!</a>
+  <a href="https://github.com/nexoslabs/featurastic-ui-buttons/stargazers">⭐ Star us on GitHub!</a>
 </p>
