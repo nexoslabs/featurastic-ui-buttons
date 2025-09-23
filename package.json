@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nexoscreation/featurastic-ui-butttons.git"
+    "url": "git+https://github.com/nexoslabs/featurastic-ui-butttons.git"
   },
   "keywords": [
     "UI",
@@ -28,15 +28,15 @@
     "javascript"
   ],
   "author": {
-    "name": "Nexos Creator",
-    "email": "nexoscreator@outlook.com",
-    "url": "https://github.com/nexoscreator"
+    "name": "Nexos Labs",
+    "email": "contact@nexoscreation.tech",
+    "url": "https://github.com/nexoslabs"
   },
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/nexoscreation/featurastic-ui-butttons/issues"
+    "url": "https://github.com/nexoslabs/featurastic-ui-butttons/issues"
   },
-  "homepage": "https://github.com/nexoscreation/featurastic-ui-butttons#readme",
+  "homepage": "https://github.com/nexoslabs/featurastic-ui-butttons#readme",
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
     "vue": "^3.0.0"

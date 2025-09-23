@@ -1,8 +1,8 @@
-![GitHub Latest Release](https://img.shields.io/github/v/release/nexoscreation/featurastic-ui-buttons.svg?style=flat-square&color=cyan)
-![GitHub Pages](https://img.shields.io/github/deployments/nexoscreation/featurastic-ui-buttons/github-pages.svg?style=flat-square&color=cyan)
+![GitHub Latest Release](https://img.shields.io/github/v/release/nexoslabs/featurastic-ui-buttons.svg?style=flat-square&color=cyan)
+![GitHub Pages](https://img.shields.io/github/deployments/nexoslabs/featurastic-ui-buttons/github-pages.svg?style=flat-square&color=cyan)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/featurastic-ui-buttons.svg?style=flat-square&color=cyan)
 ![npm downloads](https://img.shields.io/npm/dm/featurastic-ui-buttons.svg?style=flat-square&color=cyan)
-![GitHub License](https://img.shields.io/github/license/nexoscreation/featurastic-ui-buttons.svg?style=flat-square&color=cyan)
+![GitHub License](https://img.shields.io/github/license/nexoslabs/featurastic-ui-buttons.svg?style=flat-square&color=cyan)
 
 # 🚀 Featurastic UI Buttons
 
@@ -110,7 +110,7 @@ This project is open-source and licensed under the **CC0-1.0 License**. See the 
 ---
 
 <p align="center">
-  Made with ❤️ by the Nexos Labs Team
+  Made with ❤️ by the <a href="https://github.com/nexoslabs">@nexoslabs</a> Team
 </p>
 
 <p align="center">
